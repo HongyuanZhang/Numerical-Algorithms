@@ -1,3 +1,6 @@
+'''
+Bezier Curve Interpolation
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 

@@ -1,3 +1,6 @@
+'''
+Cubic Splines
+'''
 import numpy as np
 import pa_lu_factorization
 import matplotlib.pyplot as plt
