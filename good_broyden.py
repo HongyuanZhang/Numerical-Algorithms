@@ -29,14 +29,3 @@ def good_broyden(x0, F, A0, k):
         A += np.outer(Delta-np.dot(A, delta), delta)/np.dot(delta, delta)
         print(x)
     return x
-
-# Example Problem: Computer Problem 9
-x0 = np.array([0.9,1.9,2.9], dtype=float)
-
-def F(x):
-    f1 = (x[0]-1)**2+(x[1]+2)**2+x[2]**2-25
-    f2 = (x[0]+2)**2+(x[1]-2)**2+(x[2]+1)**2-25
-    f3 = (x[0]-4)**2+(x[1]+2)**2+(x[2]-3)**2-25
-    return np.array([f1, f2, f3])
-
-good_broyden(x0, F, np.identity(3), 50)

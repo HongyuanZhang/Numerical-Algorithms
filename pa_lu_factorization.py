@@ -22,7 +22,7 @@ def pa_lu_factorization(A):
         temp_row_P = P[j,:].copy()
         P[j,:] = P[index, :]
         P[index,:] = temp_row_P
-        #no singular matrix
+        # no singular matrix
         if abs(A[j][j]) < np.finfo(float).eps:
             print("singular matrix encountered")
             return

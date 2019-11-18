@@ -6,6 +6,7 @@ import math
 import nest
 import matplotlib.pyplot as plt
 
+
 # Newton's Divided Differences
 # Input: x, x-coordinates of input points
 #        y, y-coordinates of input points
@@ -83,22 +84,3 @@ def e_neg_sqr_x_cheb(n, x):
     y = np.exp(x_neg_sqr_base)
     # interpolate the y value at x
     return polyinterp(x_base, y, x)
-
-
-# generate plots
-n = 20 # desired degree of interpolating polynomial
-x = np.linspace(-1,1,201) # points for generating plot
-ordinary_x = np.linspace(-1,1,n+1) # the evenly spaced base points
-ordinary_y = [np.exp((-1)*np.square(x)) for x in ordinary_x] # y values corresponding to ordinary_x
-# Interpolated values for x using the Chebyshev Interpolating Polynomial
-cheb_interp_y = [e_neg_sqr_x_cheb(n, item) for item in x]
-# Interpolated values for x using the Interpolating Polynomial based on ordinary_x
-ord_interp_y = [polyinterp(ordinary_x, ordinary_y, item) for item in x]
-# True y values for x
-true_y = np.exp((-1)*np.square(x))
-# plotting
-plt.figure()
-plt.plot(x, cheb_interp_y, label = "chebyshev")
-plt.plot(x, ord_interp_y, label = "evenly spaced")
-plt.legend(loc='upper left')
-plt.show()
