@@ -26,13 +26,3 @@ def bad_broyden(x0, F, B0, k):
         B += np.matmul(np.outer(delta-np.dot(B, Delta), delta), B)/np.dot(np.dot(delta, B), Delta)
         print(x)
     return x
-
-# Example Problem: Example 2.33
-x0 = np.array([2,2], dtype=float)
-
-def F(x):
-    f1 = 6*x[0]**3+x[0]*x[1]-3*x[1]**3-4
-    f2 = x[0]**2-18*x[0]*x[1]**2+16*x[1]**3+1
-    return np.array([f1, f2])
-
-bad_broyden(x0, F, np.identity(2), 50)
