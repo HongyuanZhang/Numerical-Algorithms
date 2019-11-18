@@ -33,23 +33,3 @@ def back_substitution(reduced_matrix, reduced_b):
             reduced_b[i] -= reduced_matrix[i][j]*x[j]
         x[i] = reduced_b[i]/reduced_matrix[i][i]
     return x
-
-
-# For 2.1 Computer Problem 2
-# produces a hilbert matrix of dimension n
-def hilbert_matrix(n):
-    a = np.zeros((n, n))
-    for i in range(n):
-        for j in range(n):
-            a[i][j] = 1/(i+j+1)
-    return a
-
-# example problem: 2.1 Computer Problem 2 (c)
-n = 10
-a = [[1,2,-1],[2,1,-2],[-3,1,1]]
-b = [3,3,-6]
-
-
-r_m, r_b = gaussian_elimination(a, b)
-
-back_substitution(r_m, r_b)
