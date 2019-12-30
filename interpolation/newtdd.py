@@ -3,7 +3,7 @@ Newton's Divided Differences Method for Polynomial Interpolation
 '''
 import numpy as np
 import math
-import nest
+import fundamentals.nest as nest
 import matplotlib.pyplot as plt
 
 

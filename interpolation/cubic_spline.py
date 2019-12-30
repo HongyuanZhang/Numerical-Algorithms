@@ -2,7 +2,7 @@
 Cubic Splines for Interpolation
 '''
 import numpy as np
-import pa_lu_factorization
+import equation_solver.pa_lu_factorization as pa_lu_factorization
 import matplotlib.pyplot as plt
 
 

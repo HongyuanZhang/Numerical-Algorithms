@@ -2,7 +2,7 @@
 Nonlinear Least Squares Methods: Gauss-Newton and Levenberg-Marquardt
 '''
 import numpy as np
-from pa_lu_factorization import pa_lu_factorization, back_substitution
+from equation_solver.pa_lu_factorization import pa_lu_factorization, back_substitution
 
 
 # Minimize r_1(x)^2+...+r_m(x)^2

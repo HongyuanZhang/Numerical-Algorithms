@@ -3,7 +3,7 @@ Generalized Minimum Residual Method (GMRES)
 '''
 import numpy as np
 from qr_factorization import householder
-from pa_lu_factorization import pa_lu_factorization, back_substitution
+from equation_solver.pa_lu_factorization import pa_lu_factorization, back_substitution
 
 
 # Basic GMRES
