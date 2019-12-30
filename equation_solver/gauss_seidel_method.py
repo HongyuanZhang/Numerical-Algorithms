@@ -2,7 +2,6 @@
 Gauss-Seidel Method - Iterative Method for Solving Systems of Equations
 '''
 import numpy as np
-from scipy.sparse import spdiags
 
 
 # Gauss-Seidel Method for Solving Systems of Equations

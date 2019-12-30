@@ -3,7 +3,9 @@ Nested Multiplication
 '''
 
 
-# To evaluate the following function at multiple x's, input an numpy array of x's
+# note: coef and base_pt are numpy arrays
+# x can be a single number, if you want to evaluate at a single point
+# or a numpy array, if you want to evaluate at multiple points
 def nest(degree, coef, x, base_pt):
     y = coef[degree]
     for i in range(degree-1, -1, -1):

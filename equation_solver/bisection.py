@@ -18,14 +18,14 @@ def bisection_tol(func, a, b, tol):
             # find midpoint
             c = (a+b)/2
             f_c = func(c)
-            # if f(c)=0, we have found the root!
+            # if f(c)=0, root is found!
             if f_c == 0:
                 return c
-            # if f(a)*f(c)<0, we pick the half interval [a,c]
-            elif f_a*f_c<0:
+            # if f(a)*f(c)<0, pick the half interval [a,c]
+            elif f_a*f_c < 0:
                 b = c
                 f_b = f_c
-            # else f(b)*f(c)<0, we pick the other half interval [b,c]
+            # else f(b)*f(c)<0, pick the other half interval [b,c]
             else:
                 a = c
                 f_a = f_c
@@ -46,7 +46,7 @@ def bisection_step(func, a, b, num_step):
             f_c = func(c)
             if f_c == 0:
                 return c
-            elif f_a*f_c<0:
+            elif f_a*f_c < 0:
                 b = c
                 f_b = f_c
             else:

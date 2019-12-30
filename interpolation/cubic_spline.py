@@ -1,5 +1,5 @@
 '''
-Cubic Splines
+Cubic Splines for Interpolation
 '''
 import numpy as np
 import pa_lu_factorization

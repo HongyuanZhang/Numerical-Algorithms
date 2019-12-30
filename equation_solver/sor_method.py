@@ -9,7 +9,7 @@ import numpy as np
 #        b, right-hand-side of the system of equations
 #        x0, initial guess for solution
 #        k, desired number of iterations
-#        w, relaxation parameter
+#        w, relaxation paramter
 def sor(a, b, x0, k, w):
     # diagonal matrix of a
     d = np.diag(np.diag(a))

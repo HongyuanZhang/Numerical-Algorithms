@@ -1,7 +1,6 @@
 '''
 Inverse Quadratic Interpolation Method for solving equations
 '''
-import math
 
 
 # Inverse Quadratic Interpolation Method
@@ -12,7 +11,7 @@ def iqi(g, x0, x1, x2, epsilon):
     prev_prev_x=x0
     prev_prev_prev_x=x0
     # continuously do iqi method until cur_x and prev_x are close
-    while abs(cur_x-prev_x) > epsilon:
+    while abs(cur_x - prev_x) > epsilon:
         prev_prev_prev_x = prev_prev_x
         prev_prev_x = prev_x
         prev_x = cur_x

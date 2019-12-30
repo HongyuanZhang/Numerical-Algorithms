@@ -3,7 +3,6 @@ Gaussian Elimination and Backward Substitution
 '''
 import numpy as np
 
-
 # naive gaussian elimination of the tableau [coef_matrix | b], where row swapping is not allowed
 def gaussian_elimination(coef_matrix, b):
     # dimension of the matrix

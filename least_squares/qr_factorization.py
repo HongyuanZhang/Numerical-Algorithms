@@ -1,6 +1,3 @@
-'''
-QR Factorization
-'''
 import numpy as np
 
 

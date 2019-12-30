@@ -3,7 +3,6 @@ Conjugate Gradient Method with Preconditioner
 (If you don't want a preconditioner, then pass an identity matrix as the fourth parameter.)
 '''
 import numpy as np
-from gaussian_elimination import hilbert_matrix
 
 
 # conjugate gradient method for solving a system of equations

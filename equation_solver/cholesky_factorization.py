@@ -10,7 +10,7 @@ import math
 def cholesky_factorization(A):
     n = len(A)  # dimension
     R = np.zeros((n, n))  # placeholder for R, the upper-triangular matrix with A=R^TR
-    # iterate through submatrices
+    # iterate through sub-matrices
     for i in range(n):
         if A[i, i] < 0:
             return
